@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KYD-yb-2kl">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Kindling 🔥-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CardsViewController" customModule="Kindling" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Kindling 🔥" id="K7Y-o2-7cJ"/>
+                    <connections>
+                        <segue destination="gOe-pl-mRJ" kind="showDetail" identifier="DETAIL_SEGUE" id="H3u-p3-H7v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="763.768115942029" y="67.633928571428569"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="lva-WY-ooi">
+            <objects>
+                <viewController id="rVv-2C-Oot" customClass="DetailViewController" customModule="Kindling" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oWh-A4-lga">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W0i-uC-EKk">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3tq-V3-mzJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="963"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2II-7O-sSH">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="963"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c6z-Yk-Pgj">
+                                                        <rect key="frame" x="8" y="8" width="398" height="404"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVe-2I-Wjj">
+                                                        <rect key="frame" x="8" y="422" width="398" height="28"/>
+                                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="24"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="T9M-T0-Fvu">
+                                                        <rect key="frame" x="8" y="460" width="398" height="148"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZtW-d2-HTj">
+                                                                <rect key="frame" x="8" y="8" width="77" height="33"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="envelope.badge" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="rHU-dd-5Le">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="31"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="20" id="Erm-2b-Zq3"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9x-QU-atl">
+                                                                        <rect key="frame" x="28" y="0.0" width="49" height="33"/>
+                                                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
+                                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <state key="normal" title="Email"/>
+                                                                        <connections>
+                                                                            <action selector="emailButtonDidTap:" destination="rVv-2C-Oot" eventType="touchUpInside" id="OO4-1h-724"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="sja-7K-4js">
+                                                                <rect key="frame" x="8" y="41" width="84" height="33"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Mio-nl-ktr">
+                                                                        <rect key="frame" x="0.0" y="0.5" width="20" height="31.5"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="20" id="KC0-sD-V2C"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afz-VK-Eyi">
+                                                                        <rect key="frame" x="28" y="0.0" width="56" height="33"/>
+                                                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
+                                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <state key="normal" title="Phone"/>
+                                                                        <connections>
+                                                                            <action selector="phoneButtonDidTap:" destination="rVv-2C-Oot" eventType="touchUpInside" id="vNe-jv-M49"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gBk-Fw-9W0">
+                                                                <rect key="frame" x="8" y="74" width="62" height="33"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iphone" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="qOx-cU-qfS">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="33"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="20" id="XzQ-Lw-2f6"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R1U-8K-Dog">
+                                                                        <rect key="frame" x="28" y="0.0" width="34" height="33"/>
+                                                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
+                                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <state key="normal" title="Cell"/>
+                                                                        <connections>
+                                                                            <action selector="cellButtonDidTap:" destination="rVv-2C-Oot" eventType="touchUpInside" id="ko9-JY-bLC"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="VRb-1N-i9m">
+                                                                <rect key="frame" x="8" y="107" width="64" height="33"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gift" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="NNq-9H-h0z">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="32.5"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="20" id="MiN-0X-7yo"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGb-0q-zJD">
+                                                                        <rect key="frame" x="28" y="0.0" width="36" height="33"/>
+                                                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
+                                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <state key="normal" title="Bod"/>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                                    </stackView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nearby Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKH-Ja-zce">
+                                                        <rect key="frame" x="8" y="618" width="398" height="28"/>
+                                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="24"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="rmC-67-xZe">
+                                                        <rect key="frame" x="8" y="656" width="398" height="202"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </mapView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="vud-jm-eK3">
+                                                        <rect key="frame" x="8" y="868" width="398" height="87"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ela-R0-5LF">
+                                                                <rect key="frame" x="355.5" y="8" width="34.5" height="21"/>
+                                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="State" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tas-1B-cbm">
+                                                                <rect key="frame" x="344" y="33" width="46" height="21"/>
+                                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1XX-C6-O2e">
+                                                                <rect key="frame" x="320" y="58" width="70" height="21"/>
+                                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                                    </stackView>
+                                                </subviews>
+                                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="2II-7O-sSH" firstAttribute="top" secondItem="3tq-V3-mzJ" secondAttribute="top" id="3HF-g4-lHM"/>
+                                            <constraint firstItem="2II-7O-sSH" firstAttribute="leading" secondItem="3tq-V3-mzJ" secondAttribute="leading" id="Mdh-Ew-YmR"/>
+                                            <constraint firstAttribute="bottom" secondItem="2II-7O-sSH" secondAttribute="bottom" id="enY-Le-Ttd"/>
+                                            <constraint firstAttribute="trailing" secondItem="2II-7O-sSH" secondAttribute="trailing" id="oB6-7n-F19"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="3tq-V3-mzJ" firstAttribute="top" secondItem="W0i-uC-EKk" secondAttribute="top" id="BcD-mj-dem"/>
+                                    <constraint firstAttribute="trailing" secondItem="3tq-V3-mzJ" secondAttribute="trailing" id="MVc-tr-hXr"/>
+                                    <constraint firstAttribute="bottom" secondItem="3tq-V3-mzJ" secondAttribute="bottom" id="OgA-Yx-Uih"/>
+                                    <constraint firstItem="rmC-67-xZe" firstAttribute="height" secondItem="W0i-uC-EKk" secondAttribute="height" multiplier="1/4" id="Xav-I2-bKp"/>
+                                    <constraint firstItem="3tq-V3-mzJ" firstAttribute="leading" secondItem="W0i-uC-EKk" secondAttribute="leading" id="a9U-sP-uLk"/>
+                                    <constraint firstItem="c6z-Yk-Pgj" firstAttribute="height" secondItem="W0i-uC-EKk" secondAttribute="height" multiplier="0.5" id="cm7-ok-uYa"/>
+                                    <constraint firstItem="3tq-V3-mzJ" firstAttribute="width" secondItem="W0i-uC-EKk" secondAttribute="width" id="iP2-xo-HD2"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="CF3-rO-yJD"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="h6i-7F-kzI"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="15H-bS-i9W"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="W0i-uC-EKk" secondAttribute="bottom" id="0gy-lw-7W0"/>
+                            <constraint firstItem="15H-bS-i9W" firstAttribute="trailing" secondItem="W0i-uC-EKk" secondAttribute="trailing" id="6Qu-va-wqo"/>
+                            <constraint firstItem="W0i-uC-EKk" firstAttribute="top" secondItem="15H-bS-i9W" secondAttribute="top" id="Qpj-tP-3vb"/>
+                            <constraint firstItem="W0i-uC-EKk" firstAttribute="leading" secondItem="15H-bS-i9W" secondAttribute="leading" id="hQ4-w3-XgP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="05I-9F-2h3"/>
+                    <connections>
+                        <outlet property="cellButton" destination="R1U-8K-Dog" id="KiE-1P-awB"/>
+                        <outlet property="cityLabel" destination="ela-R0-5LF" id="5Xf-la-2oa"/>
+                        <outlet property="countryLabel" destination="1XX-C6-O2e" id="sU8-v0-H14"/>
+                        <outlet property="dobButton" destination="MGb-0q-zJD" id="f0v-dd-H68"/>
+                        <outlet property="emailButton" destination="v9x-QU-atl" id="0MB-Kx-BMQ"/>
+                        <outlet property="imageView" destination="c6z-Yk-Pgj" id="C5K-ov-JaE"/>
+                        <outlet property="mapView" destination="rmC-67-xZe" id="Won-ft-eC7"/>
+                        <outlet property="nameLabel" destination="cVe-2I-Wjj" id="ahf-0T-hUw"/>
+                        <outlet property="phoneButton" destination="afz-VK-Eyi" id="hpI-aL-eDT"/>
+                        <outlet property="stateLabel" destination="tas-1B-cbm" id="AkQ-7u-HV3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hvo-ex-pUp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2715.9420289855075" y="67.633928571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wcw-1r-AiH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KYD-yb-2kl" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xTw-9l-GUY">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.57647058823529407" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ZA6-Fb-xxU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fa7-Xf-Fgm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-146.37681159420291" y="67.633928571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qml-uP-HWe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gOe-pl-mRJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ns7-qi-Q8b">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rVv-2C-Oot" kind="relationship" relationship="rootViewController" id="8Yn-bf-kgR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gkp-LQ-HzU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1805.7971014492755" y="67.633928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="envelope.badge" catalog="system" width="128" height="102"/>
+        <image name="gift" catalog="system" width="128" height="124"/>
+        <image name="iphone" catalog="system" width="108" height="128"/>
+        <image name="phone" catalog="system" width="128" height="115"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
